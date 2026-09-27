@@ -13,8 +13,8 @@ export function Strengths() {
     <section aria-label="Strengths">
       <div className="mx-auto flex max-w-6xl flex-col items-center px-6 pt-12">
         <Image
-          src="/images/portfolio-avatar.png"
-          alt="Anna Pauseiro working on her laptop"
+          src="/images/avatar-anna.webp"
+          alt="Anna Pauseiro"
           width={160}
           height={160}
           priority
