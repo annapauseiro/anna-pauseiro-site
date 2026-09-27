@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const paragraphs = [
   'Running a business means making decisions, managing information, monitoring performance, and keeping critical processes moving — often while trying to grow.',
@@ -15,7 +16,7 @@ export function Intro() {
   return (
     <section id="intro" className="scroll-mt-16 bg-brand text-brand-foreground">
       <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-16 md:flex-row md:items-center md:gap-16 md:py-24">
-        <div className="relative mx-auto aspect-[2/3] w-full max-w-sm shrink-0 overflow-hidden rounded-sm md:w-2/5">
+        <div className="relative mx-auto aspect-[2/3] w-full max-w-md shrink-0 overflow-hidden rounded-sm md:w-2/5">
           <Image
             src="/images/portrait.png"
             alt="Anna Pauseiro sitting at a desk"
@@ -36,12 +37,12 @@ export function Intro() {
               {text}
             </p>
           ))}
-          <a
-            href="#services"
-            className="mt-2 self-start rounded-xl bg-brand-foreground px-8 py-3 text-lg text-ink transition-opacity hover:opacity-90"
+          <Link
+            href="/services"
+            className="mt-2 self-center rounded-xl bg-brand-foreground px-8 py-3 text-lg text-ink transition-opacity hover:opacity-90"
           >
             Learn More
-          </a>
+          </Link>
         </div>
       </div>
     </section>
