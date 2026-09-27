@@ -5,7 +5,7 @@ import { CircleCheck, LoaderCircle } from 'lucide-react'
 
 // Web3Forms access key (public by design: it can only send messages to Anna's inbox).
 // Get it at https://web3forms.com using anna.pauseiro@gmail.com.
-const WEB3FORMS_ACCESS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY'
+const WEB3FORMS_ACCESS_KEY = '07cc4cec-c82f-48fd-91f8-895637d2afab'
 
 type Status = 'idle' | 'sending' | 'sent' | 'error'
 
