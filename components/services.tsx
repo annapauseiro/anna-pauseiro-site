@@ -24,7 +24,7 @@ export function Services() {
   return (
     <section id="services" className="scroll-mt-16">
       <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 py-16 md:py-24">
-        <div className="mx-auto flex max-w-3xl flex-col gap-5 text-center">
+        <div className="mx-auto flex max-w-6xl flex-col gap-5 text-center">
           <h2 className="font-serif text-4xl text-brand md:text-5xl">What Do I Do?</h2>
           <p className="text-pretty font-serif text-lg leading-relaxed text-ink/80">
             Imagine having a trusted partner who helps you turn data into clear insights, improve processes,
