@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export function Hero() {
   return (
@@ -10,11 +11,11 @@ export function Hero() {
           fill
           priority
           sizes="(min-width: 768px) 66vw, 100vw"
-          className="object-cover object-[50%_25%]"
+          className="-scale-x-100 object-cover object-[50%_25%]"
         />
       </div>
       <div className="flex w-full flex-col justify-center gap-8 px-6 py-12 md:w-1/3 md:px-10 lg:px-14">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center justify-center gap-3">
           <Image src="/images/logo.png" alt="" width={56} height={56} className="size-14 mix-blend-multiply" />
           <p className="font-serif text-2xl tracking-wide text-brand">ANNA PAUSEIRO</p>
         </div>
@@ -27,12 +28,12 @@ export function Hero() {
             "I help entrepreneurs and businesses operate more efficiently by looking at the numbers and telling what's working and what's not, so they can focus on growth and make the right decisions."
           }
         </p>
-        <a
-          href="#intro"
-          className="self-start rounded-xl bg-ink px-8 py-3 font-serif text-lg text-brand-foreground transition-opacity hover:opacity-90"
+        <Link
+          href="/services"
+          className="self-center rounded-xl bg-ink px-8 py-3 font-serif text-lg text-brand-foreground transition-opacity hover:opacity-90"
         >
           Learn More
-        </a>
+        </Link>
       </div>
     </section>
   )
