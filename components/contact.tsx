@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { BriefcaseBusiness as Linkedin, Globe, Mail } from 'lucide-react'
 
 const EMAIL = 'anna.pauseiro@gmail.com'
@@ -24,10 +25,10 @@ export function Contact() {
             WorldWide
           </li>
           <li>
-            <a href={`mailto:${EMAIL}`} className="flex items-center gap-2 hover:underline">
+            <Link href="/contact" className="flex items-center gap-2 hover:underline">
               <Mail className="size-5" aria-hidden="true" />
               {EMAIL}
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
