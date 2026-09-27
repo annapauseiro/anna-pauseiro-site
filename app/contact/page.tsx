@@ -16,10 +16,10 @@ export default function ContactPage() {
       <main className="flex flex-col md:flex-row md:items-stretch">
         <div className="relative md:w-2/5 md:shrink-0">
           <Image
-            src="/images/contact-garden.webp"
+            src="/images/contact-garden-v2.webp"
             alt="Anna Pauseiro sitting in a garden with her laptop"
             width={1086}
-            height={1448}
+            height={1273}
             priority
             sizes="(min-width: 768px) 40vw, 100vw"
             className="block h-auto w-full"

@@ -40,6 +40,6 @@ for (const [name, count] of Object.entries(SLIDES)) {
 
 // Site photos stored in github.com/annapauseiro/anna-pauseiro-site/photos
 const PHOTOS_BASE = 'https://raw.githubusercontent.com/annapauseiro/anna-pauseiro-site/main/photos/'
-for (const file of ['avatar-anna.webp', 'contact-garden.webp']) {
+for (const file of ['avatar-anna.webp', 'contact-garden-v2.webp']) {
   await save(PHOTOS_BASE + file, `public/images/${file}`)
 }
