@@ -1,10 +1,44 @@
 import Image from 'next/image'
 
-const photos = [
-  { src: '/images/about-porto.png', alt: 'Anna laughing by the river in Porto' },
-  { src: '/images/about-desert.jpg', alt: 'Anna sitting on a wall overlooking a desert oasis' },
-  { src: '/images/about-snow.jpg', alt: 'Anna holding her dog in the snow' },
-  { src: '/images/about-dogs.jpg', alt: 'Zen and Zara, two English Cocker Spaniels' },
+type Photo = {
+  src: string
+  alt: string
+  frame: string
+  tape: string
+  sizes: string
+}
+
+// Casual scrapbook collage: taped snapshots at slight angles.
+// Zen and Zara's photo is intentionally the smallest, tucked in the corner.
+const photos: Photo[] = [
+  {
+    src: '/images/about-porto.png',
+    alt: 'Anna laughing by the river in Porto',
+    frame: 'left-[3%] top-[2%] z-10 w-[50%] aspect-[3/4] -rotate-3',
+    tape: 'w-16 md:w-20 left-1/2 -top-3 -translate-x-1/2 -rotate-6 bg-[#E9CBC6]/80',
+    sizes: '(min-width: 768px) 25vw, 50vw',
+  },
+  {
+    src: '/images/about-desert.jpg',
+    alt: 'Anna sitting on a wall overlooking a desert oasis',
+    frame: 'right-[2%] top-[8%] z-20 w-[46%] aspect-[4/5] rotate-3',
+    tape: 'w-16 md:w-20 left-1/3 -top-3 rotate-6 bg-[#C79A56]/60',
+    sizes: '(min-width: 768px) 23vw, 46vw',
+  },
+  {
+    src: '/images/about-snow.jpg',
+    alt: 'Anna holding her dog in the snow',
+    frame: 'left-[16%] bottom-[2%] z-30 w-[40%] aspect-[3/4] rotate-2',
+    tape: 'w-16 md:w-20 -right-4 top-2 rotate-45 bg-[#E9CBC6]/80',
+    sizes: '(min-width: 768px) 20vw, 40vw',
+  },
+  {
+    src: '/images/about-dogs.jpg',
+    alt: 'Zen and Zara, two English Cocker Spaniels',
+    frame: 'right-[8%] bottom-[9%] z-30 w-[26%] aspect-square -rotate-6',
+    tape: 'left-2 -top-3 w-10 md:w-12 -rotate-12 bg-[#9C4F5D]/35',
+    sizes: '(min-width: 768px) 13vw, 26vw',
+  },
 ]
 
 const paragraphs = [
@@ -19,14 +53,20 @@ export function About() {
   return (
     <section id="about" className="scroll-mt-16">
       <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 py-16 md:flex-row md:items-center md:gap-16 md:py-24">
-        <div className="grid w-full grid-cols-2 gap-3 md:w-1/2">
-          {photos.map((photo, i) => (
-            <div
+        <div className="relative mx-auto aspect-[1/1.1] w-full max-w-xl md:w-1/2">
+          {photos.map((photo) => (
+            <figure
               key={photo.src}
-              className={`relative aspect-[3/4] overflow-hidden rounded-xl ${i % 2 === 1 ? 'translate-y-6' : ''}`}
+              className={`absolute bg-[#fffdf9] p-1.5 shadow-[0_6px_18px_rgba(58,42,48,0.14)] transition-transform duration-300 hover:z-40 hover:rotate-0 hover:scale-[1.03] md:p-2 ${photo.frame}`}
             >
-              <Image src={photo.src} alt={photo.alt} fill sizes="(min-width: 768px) 25vw, 50vw" className="object-cover" />
-            </div>
+              <div className="relative h-full w-full overflow-hidden">
+                <Image src={photo.src} alt={photo.alt} fill sizes={photo.sizes} className="object-cover" />
+              </div>
+              <span
+                aria-hidden="true"
+                className={`absolute h-5 backdrop-blur-[1px] md:h-6 ${photo.tape}`}
+              />
+            </figure>
           ))}
         </div>
         <div className="flex w-full flex-col gap-5 md:w-1/2">
