@@ -10,7 +10,7 @@ const WEB3FORMS_ACCESS_KEY = '07cc4cec-c82f-48fd-91f8-895637d2afab'
 type Status = 'idle' | 'sending' | 'sent' | 'error'
 
 const fieldClass =
-  'h-13 w-full rounded-lg border-[1.5px] border-[#e9cbc6] bg-white px-4 text-base text-ink placeholder:text-ink/45 transition-colors focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/20'
+  'w-full rounded-lg border-[1.5px] border-[#e9cbc6] bg-white px-4 text-base text-ink placeholder:text-ink/45 transition-colors focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/20'
 
 export function ContactForm() {
   const [status, setStatus] = useState<Status>('idle')
@@ -73,7 +73,7 @@ export function ContactForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="flex flex-col gap-2 text-[15px] font-bold text-ink">
           Name *
-          <input name="name" type="text" required autoComplete="name" placeholder="Your name" className={fieldClass} />
+          <input name="name" type="text" required autoComplete="name" placeholder="Your name" className={`${fieldClass} h-13`} />
         </label>
         <label className="flex flex-col gap-2 text-[15px] font-bold text-ink">
           Email *
@@ -83,7 +83,7 @@ export function ContactForm() {
             required
             autoComplete="email"
             placeholder="you@company.com"
-            className={fieldClass}
+            className={`${fieldClass} h-13`}
           />
         </label>
       </div>
@@ -95,7 +95,7 @@ export function ContactForm() {
           required
           rows={6}
           placeholder="Tell me a little about your project…"
-          className={`${fieldClass} h-auto resize-y py-3.5`}
+          className={`${fieldClass} min-h-40 resize-y py-3.5`}
         />
       </label>
 
