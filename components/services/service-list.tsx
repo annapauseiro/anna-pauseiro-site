@@ -18,31 +18,31 @@ const mainServices: Service[] = [
     icon: Table2,
     title: 'Data Analysis & Reporting',
     description:
-      'Data analysis & reporting with high attention to detail and a methodical, accuracy-focused approach — I help you with data collection, cleaning, validation and analysis (advanced Excel, SQL, Google Sheets).',
+      'High attention to detail and a methodical, accuracy-focused approach - I help you with data collection, cleaning, validation, and analysis (advanced Excel, SQL, Google Sheets).',
   },
   {
     icon: BarChart3,
     title: 'Dashboard & BI Development',
     description:
-      'Clear communication of complex insights, plus stakeholder management and client communication with clarity, professionalism, and sound judgment — Excel, Power BI, Tableau; KPI dashboards and automated reports.',
+      'KPI dashboards and automated reports in Excel, Power BI, and Tableau - turning complex insights into clear visuals, with stakeholder communication handled with professionalism and sound judgment.',
   },
   {
     icon: SearchCheck,
     title: 'Auditing & Quality Control',
     description:
-      "Quality control for data-driven processes with exceptional accountability, data integrity and rigorous risk awareness — systematic review of data and processes, anomaly and inconsistency detection, finding alternative solutions when the direct path wasn't available.",
+      "Quality control for data-driven processes with exceptional accountability, data integrity, and rigorous risk awareness - systematic review of data and processes, anomaly and inconsistency detection, finding alternative solutions when the direct path isn't available.",
   },
   {
     icon: TrendingUp,
     title: 'Trend, Performance & Comparative Analysis',
     description:
-      'Analytical thinking and data-driven decision-making — monthly/weekly reports, trend analysis and data-driven recommendations.',
+      'Analytical thinking and data-driven decision-making - monthly/weekly reports, trend analysis, and data-driven recommendations.',
   },
   {
     icon: Bot,
     title: 'AI-Assisted Analysis & Reporting',
     description:
-      'A proactive approach to process improvement — using AI to speed up analysis, summarization and report generation.',
+      'A proactive approach to process improvement - using AI to speed up analysis, summarization, and report generation.',
   },
 ]
 
@@ -51,25 +51,25 @@ const supportServices: Service[] = [
     icon: FileStack,
     title: 'Documentation Management',
     description:
-      'Records & documentation management with excellent organization, reliability, and time/deadline management — file organization, deadline tracking, document management systems.',
+      'Records & documentation management with excellent organization, reliability, and time/deadline management - file organization, deadline tracking, document management systems.',
   },
   {
     icon: Workflow,
     title: 'Workflows & Operations',
     description:
-      'Process documentation & optimization with strong process coordination — mapping and improving operational workflows, creating manuals and SOPs.',
+      'Process documentation & optimization with strong process coordination - mapping and improving operational workflows, creating manuals and SOPs.',
   },
   {
     icon: KanbanSquare,
     title: 'Project Management',
     description:
-      'Project & task coordination (Notion, Monday.com, ClickUp) with accountability across critical processes — project management support with an analytical, organizational eye.',
+      'Project & task coordination (Notion, Monday.com, ClickUp) with accountability across critical processes - project management support with an analytical, organizational eye.',
   },
   {
     icon: FileText,
     title: 'AI-Assisted Documentation',
     description:
-      'Meeting minutes, transcription & summarization (AI-assisted) with a consistently high level of accuracy — a quick-turnaround, low-friction service.',
+      'Meeting minutes, transcription & summarization (AI-assisted) with a consistently high level of accuracy - a quick-turnaround, low-friction service.',
   },
 ]
 

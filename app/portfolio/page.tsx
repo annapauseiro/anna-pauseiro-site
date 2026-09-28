@@ -9,7 +9,7 @@ import { SiteHeader } from '@/components/site-header'
 export const metadata: Metadata = {
   title: 'Portfolio | Anna Pauseiro',
   description:
-    'Data analysis, BI dashboards, SQL data warehouses and finance consolidation projects by Anna Pauseiro.',
+    'Data analysis, BI dashboards, SQL data warehouses, and finance consolidation projects by Anna Pauseiro.',
 }
 
 export default function PortfolioPage() {

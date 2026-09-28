@@ -3,14 +3,14 @@ import { BarChart3, SearchCheck, TrendingUp } from 'lucide-react'
 const services = [
   {
     icon: TrendingUp,
-    title: 'Trend, Performance & Comparative Expertise',
-    description:
-      'Data collection, cleaning, validation, KPI tracking, and insights (advanced Excel, SQL, Google Sheets, Power BI).',
+    title: 'Trend, Performance & Comparative Analysis',
+    description: 'Monthly/weekly reports, trend analysis, and data-driven recommendations.',
   },
   {
     icon: BarChart3,
     title: 'Data Analysis, Reporting & Dashboards',
-    description: 'Monthly/weekly reports, trend analysis and data-driven recommendations.',
+    description:
+      'Data collection, cleaning, validation, KPI tracking, and insights (advanced Excel, SQL, Google Sheets, Power BI).',
   },
   {
     icon: SearchCheck,
@@ -28,8 +28,8 @@ export function Services() {
           <h2 className="font-serif text-4xl text-brand md:text-5xl">What Do I Do?</h2>
           <p className="text-pretty font-serif text-lg leading-relaxed text-ink/80">
             Imagine having a trusted partner who helps you turn data into clear insights, improve processes,
-            strengthen accuracy, and keep critical information organised. My approach is flexible, methodical, and
-            tailored to your workflows and goals—helping you work more efficiently, make informed decisions, and
+            strengthen accuracy, and keep critical information organized. My approach is flexible, methodical, and
+            tailored to your workflows and goals - helping you work more efficiently, make informed decisions, and
             operate with confidence. Here&apos;s how I can support your business:
           </p>
         </div>

@@ -2,14 +2,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const paragraphs = [
-  'Running a business means making decisions, managing information, monitoring performance, and keeping critical processes moving — often while trying to grow.',
+  'Running a business means making decisions, managing information, monitoring performance, and keeping critical processes moving - often while trying to grow.',
   'As your business grows, so does the volume of data, reports, documents, deadlines, and operational tasks. Without reliable systems and clear processes, important details can get missed, valuable time can be lost, and decision-making can become more difficult than it needs to be.',
 ]
 
 const paragraphsAfter = [
-  'I help entrepreneurs, small businesses, and growing teams understand what their data is telling, turning complex information into clear, actionable insights and more reliable ways of working. And I also support the processes behind the numbers.',
+  'I help entrepreneurs, small businesses, and growing teams understand what their data is saying, turning complex information into clear, actionable insights and more reliable ways of working. I also support the processes behind the numbers.',
   "My approach is methodical, accurate, collaborative, and solutions-focused. I pay close attention to detail, question inconsistencies, identify risks, and look for practical alternatives when the obvious path isn't available.",
-  "Whether you need reliable reporting, a clearer view of business performance, stronger data quality, better-documented processes, or dependable operational support, I'm here to help you work with greater clarity, confidence, and efficiency — so you can focus on growing your business.",
+  "Whether you need reliable reporting, a clearer view of business performance, stronger data quality, better-documented processes, or dependable operational support, I'm here to help you work with greater clarity, confidence, and efficiency - so you can focus on growing your business.",
 ]
 
 export function Intro() {

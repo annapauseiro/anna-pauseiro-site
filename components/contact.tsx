@@ -22,7 +22,7 @@ export function Contact() {
           </li>
           <li className="flex items-center gap-2">
             <Globe className="size-5" aria-hidden="true" />
-            WorldWide
+            Worldwide
           </li>
           <li>
             <Link href="/contact" className="flex items-center gap-2 hover:underline">

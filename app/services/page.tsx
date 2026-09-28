@@ -7,7 +7,7 @@ import { SiteHeader } from '@/components/site-header'
 export const metadata: Metadata = {
   title: 'Services | Anna Pauseiro',
   description:
-    'Data analysis & reporting, BI dashboards, auditing & quality control, AI-assisted reporting, documentation and project management.',
+    'Data analysis & reporting, BI dashboards, auditing & quality control, AI-assisted reporting, documentation, and project management.',
 }
 
 export default function ServicesPage() {

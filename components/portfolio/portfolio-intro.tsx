@@ -13,14 +13,14 @@ export function PortfolioIntro() {
       <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 py-16 md:py-20">
         <div className="mx-auto flex max-w-5xl flex-col gap-5 text-center">
           <h1 id="portfolio-heading" className="text-balance font-serif text-4xl text-brand md:text-6xl">
-            My portfolio has led me to this point
+            My journey so far
           </h1>
           <p className="text-pretty text-lg leading-relaxed text-ink/80">
             Charting my path to online success has been an enriching journey filled with learning opportunities and
             meaningful experiences. As I continue to evolve and embrace new challenges, my portfolio reflects the
-            breadth and depth of my skills in Data Analysis, Quality Control and Operations Processes. With a
-            determination to stay on the cutting edge of technology and creativity, I look forward to conquering new
-            milestones and charting even greater heights of online achievement with businesses and entrepreneurs.
+            breadth and depth of my skills in Data Analysis, Quality Control, and Operations Processes. With a
+            determination to stay on the cutting edge of technology and creativity, I look forward to reaching new
+            milestones and achieving even greater heights of online success with businesses and entrepreneurs.
             Join me on this exciting adventure!
           </p>
         </div>

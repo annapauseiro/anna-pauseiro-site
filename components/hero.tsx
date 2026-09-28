@@ -20,7 +20,7 @@ export function Hero() {
           <p className="font-serif text-2xl tracking-wide text-brand">ANNA PAUSEIRO</p>
         </div>
         <h1 className="text-balance font-serif text-3xl leading-tight text-brand lg:text-4xl">
-          Your Trusted Partner to Turning Data &amp; Processes into Clear, Reliable Decisions
+          Your Trusted Partner in Turning Data &amp; Processes into Clear, Reliable Decisions
         </h1>
         <div className="h-px w-28 bg-brand" aria-hidden="true" />
         <p className="text-pretty font-serif text-lg leading-relaxed text-brand">

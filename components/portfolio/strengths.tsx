@@ -4,7 +4,7 @@ import { CalendarCheck, ChartColumnIncreasing, ShieldCheck, Timer } from 'lucide
 const strengths = [
   { icon: CalendarCheck, title: 'Organized', text: 'Strong planning and execution to keep your business moving.' },
   { icon: ChartColumnIncreasing, title: 'Analytical', text: 'Turning complex data into simple, actionable insights.' },
-  { icon: ShieldCheck, title: 'Reliable', text: 'You can count on me for accuracy, discretion and professionalism.' },
+  { icon: ShieldCheck, title: 'Reliable', text: 'You can count on me for accuracy, discretion, and professionalism.' },
   { icon: Timer, title: 'Efficient', text: 'I optimize processes so you can focus on what matters the most.' },
 ]
 

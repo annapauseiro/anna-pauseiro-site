@@ -44,7 +44,7 @@ const photos: Photo[] = [
 const paragraphs = [
   "I'm definitely someone who loves being alive! I enjoy meeting people, new beginnings, arrivals and departures, sunrises and sunsets, flowers, music, and good food.",
   'I love contributing, sharing, and exchanging ideas. Yes, I\'m also a bit obsessed with staying organized, so I decided to turn that little "flaw" into my job. It\'s hard to explain how satisfying it is to turn chaos into order.',
-  "I'm endlessly curious, love learning, exploring new ideas, and diving into completely different subjects just because they spark my interest. Oh, and I'm totally a dog person—sharing my life with two beautiful English Cocker Spaniels, Zen and Zara.",
+  "I'm endlessly curious and love learning, exploring new ideas, and diving into completely different subjects just because they spark my interest. Oh, and I'm totally a dog person - sharing my life with two beautiful English Cocker Spaniels, Zen and Zara.",
   "Years of meditation have taught me not to panic under pressure or in times of crisis. I'm the calm, steady person you can count on when things get stormy.",
   "Maybe our paths are meant to cross, and we can build a great partnership together. I'd love to hear from you and chat about what you need.",
 ]

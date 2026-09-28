@@ -37,21 +37,21 @@ const projects: Project[] = [
     tag: 'SQL Server · Data engineering',
     title: 'Building a Sales Data Warehouse from Raw CRM & ERP Exports',
     description: [
-      'A Microsoft SQL Server warehouse built on the Bronze–Silver–Gold medallion pattern: two disconnected source systems go in as CSV exports and come out as a documented, query-ready star schema for sales analytics.',
+      'A Microsoft SQL Server warehouse built on the Bronze-Silver-Gold medallion pattern: two disconnected source systems go in as CSV exports and come out as a documented, query-ready star schema for sales analytics.',
     ],
     tags: ['SQL Server', 'Data Modeling', 'ETL'],
-    link: { href: `${GITHUB}/sql-data-warehouse-project`, label: 'View the repository with all codes and queries' },
+    link: { href: `${GITHUB}/sql-data-warehouse-project`, label: 'View the repository with all code and queries' },
   },
   {
     slides: 'analytics',
     count: 6,
     tag: 'SQL · Analytics',
-    title: 'Practical SQL data analytics focused on transforming raw data into meaningful business insights',
+    title: 'Practical SQL Data Analytics',
     description: [
-      'A comprehensive collection of SQL scripts for data exploration, analytics, and reporting. These scripts cover various analyses such as database exploration, measures and metrics, time-based trends, cumulative analytics, segmentation, and more. This repository contains SQL queries designed to help data analysts and BI professionals quickly explore, segment, and analyze data within a relational database. Each script focuses on a specific analytical theme and demonstrates best practices for SQL queries.',
+      'A comprehensive collection of SQL scripts focused on transforming raw data into meaningful business insights. They cover database exploration, measures and metrics, time-based trends, cumulative analytics, segmentation, and more, helping data analysts and BI professionals quickly explore, segment, and analyze data within a relational database. Each script focuses on a specific analytical theme and demonstrates SQL best practices.',
     ],
     tags: ['SQL', 'Analytics', 'Segmentation'],
-    link: { href: `${GITHUB}/sql-data-analytics-project`, label: 'View the repository with all codes and queries' },
+    link: { href: `${GITHUB}/sql-data-analytics-project`, label: 'View the repository with all code and queries' },
   },
   {
     slides: 'powerbi',
@@ -59,7 +59,7 @@ const projects: Project[] = [
     tag: 'Power BI',
     title: 'Sales Performance Dashboard',
     description: [
-      "An interactive Power BI report built on a SQL Server data warehouse (Bronze–Silver–Gold architecture) modeling four years of sales, customer, and product data. The report brings together KPI summary cards, a quarterly sales trend, and category/product breakdowns, all connected through DAX measures and cross-filtering slicers for country, order date, and category — turning a raw sales dataset into a single page that shows what's happening and where, at a glance.",
+      "An interactive Power BI report built on a SQL Server data warehouse (Bronze-Silver-Gold architecture) modeling four years of sales, customer, and product data. The report brings together KPI summary cards, a quarterly sales trend, and category/product breakdowns, all connected through DAX measures and cross-filtering slicers for country, order date, and category - turning a raw sales dataset into a single page that shows what's happening and where, at a glance.",
     ],
     tags: ['Power BI', 'DAX', 'SQL Server'],
     link: { href: `${GITHUB}/power-bi-sales-dashboard/tree/main`, label: 'View the repository' },
@@ -124,7 +124,7 @@ export function Projects() {
         <p className="text-sm font-semibold uppercase tracking-[0.14em] text-gold">Portfolio</p>
         <h2 className="mt-1 text-balance font-serif text-3xl font-bold text-brand md:text-4xl">Projects Summary</h2>
         <p className="mb-9 mt-3 max-w-2xl text-foreground/75">
-          Data engineering, analytics and finance projects built end to end. Each preview rotates through the
+          Data engineering, analytics, and finance projects built end to end. Each preview rotates through the
           project&apos;s slides; hover to pause, or use the arrows and dots to browse.
         </p>
 
