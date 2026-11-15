@@ -61,6 +61,21 @@ const cleanup: Project = {
   extraLink: { href: '/downloads/Contact_Cleanup_Project.xlsx', label: 'Download the Excel workbook', download: true },
 }
 
+const monthlyReport: Project = {
+  slides: 'rep',
+  count: 3,
+  wide: true,
+  tag: 'Python · Reporting automation · QC',
+  title: 'Automated Monthly Client Report',
+  description: [
+    'A script that turns a monthly ad-platform export into a finished, branded client report in one run: headline numbers against the previous month, a six-month trend, a campaign scorecard, plain-language findings and recommended actions. In this sample, it flags one campaign that takes 20% of spend and returns about 10 cents per dollar.',
+    'Every report passes a data-check gate first. If a check fails, no report is produced. The download includes the script, the template, sample data and the reports for two months. All data is fictional sample data.',
+  ],
+  tags: ['Python', 'pandas', 'Reporting automation', 'Data quality'],
+  link: { href: '/reports/monthly-report.html', label: 'Open the sample report', external: false },
+  extraLink: { href: '/downloads/Monthly_Report_Pack.zip', label: 'Download the generator and samples', download: true },
+}
+
 const projects: Project[] = [
   {
     slides: 'dwh',
@@ -168,7 +183,7 @@ export function Projects() {
         </p>
 
         <div className="grid gap-7">
-          {[featured, adsDashboard, cleanup].map((w, i) => (
+          {[featured, adsDashboard, cleanup, monthlyReport].map((w, i) => (
             <article
               key={w.slides}
               className="grid overflow-hidden rounded-2xl border border-border bg-white shadow-[0_10px_30px_-18px_rgba(58,42,48,.45)] lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)]"
