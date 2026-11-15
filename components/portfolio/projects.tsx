@@ -11,7 +11,8 @@ type Project = {
   title: string
   description: string[]
   tags: string[]
-  link?: { href: string; label: string }
+  link?: { href: string; label: string; external?: boolean }
+  extraLink?: { href: string; label: string; download?: boolean }
 }
 
 const slidesFor = (name: string, count: number) =>
@@ -28,6 +29,21 @@ const featured: Project = {
   ],
   tags: ['Excel', 'SQL', 'Power Query', 'Star schema'],
   link: { href: `${GITHUB}/financial_data_consolidation`, label: 'View the repository' },
+}
+
+const adsDashboard: Project = {
+  slides: 'ads',
+  count: 4,
+  wide: true,
+  tag: 'Excel · Marketing analytics · Dashboard',
+  title: 'Paid Ads & Lead-Source Dashboard',
+  description: [
+    'An interactive dashboard and Excel workbook that show where an SME’s ad budget goes and what it returns, across Google Ads, Meta Ads, LinkedIn Ads and Email. It brings spend, leads, cost per lead, CAC and ROAS into one view, with a channel filter, a campaign scorecard and a plain-language recommendation. In this sample data, one campaign takes 20% of spend and brings in under 1% of revenue.',
+    'The workbook runs on live formulas and includes reconciliation checks against the raw data. All figures are fictional sample data.',
+  ],
+  tags: ['Excel', 'ROAS & CAC', 'Dashboard', 'Marketing analytics'],
+  link: { href: '/dashboards/paid-ads.html', label: 'Open the interactive dashboard', external: false },
+  extraLink: { href: '/downloads/Paid_Ads_Lead_Source_Dashboard.xlsx', label: 'Download the Excel workbook', download: true },
 }
 
 const projects: Project[] = [
@@ -104,12 +120,20 @@ function ProjectBody({ p }: { p: Project }) {
         {p.link && (
           <a
             href={p.link.href}
-            target="_blank"
-            rel="noopener noreferrer"
+            {...(p.link.external === false ? {} : { target: '_blank', rel: 'noopener noreferrer' })}
             className="inline-flex items-center gap-1 self-start border-b border-current text-[0.95rem] font-semibold text-brand hover:text-gold"
           >
             {p.link.label}
             <ArrowUpRight className="h-4 w-4" />
+          </a>
+        )}
+        {p.extraLink && (
+          <a
+            href={p.extraLink.href}
+            {...(p.extraLink.download ? { download: true } : {})}
+            className="inline-flex items-center gap-1 self-start border-b border-current text-[0.95rem] font-semibold text-brand hover:text-gold"
+          >
+            {p.extraLink.label}
           </a>
         )}
       </div>
@@ -129,12 +153,17 @@ export function Projects() {
         </p>
 
         <div className="grid gap-7">
-          <article className="grid overflow-hidden rounded-2xl border border-border bg-white shadow-[0_10px_30px_-18px_rgba(58,42,48,.45)] lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)]">
-            <div className="self-start">
-              <ProjectCarousel images={slidesFor(featured.slides, featured.count)} title={featured.title} wide />
-            </div>
-            <ProjectBody p={featured} />
-          </article>
+          {[featured, adsDashboard].map((w, i) => (
+            <article
+              key={w.slides}
+              className="grid overflow-hidden rounded-2xl border border-border bg-white shadow-[0_10px_30px_-18px_rgba(58,42,48,.45)] lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)]"
+            >
+              <div className="self-start">
+                <ProjectCarousel images={slidesFor(w.slides, w.count)} title={w.title} wide startDelay={i * 900} />
+              </div>
+              <ProjectBody p={w} />
+            </article>
+          ))}
 
           <div className="grid gap-7 md:grid-cols-2">
             {projects.map((p, i) => (
