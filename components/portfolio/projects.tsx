@@ -46,6 +46,21 @@ const adsDashboard: Project = {
   extraLink: { href: '/downloads/Paid_Ads_Lead_Source_Dashboard.xlsx', label: 'Download the Excel workbook', download: true },
 }
 
+const cleanup: Project = {
+  slides: 'clean',
+  count: 3,
+  wide: true,
+  tag: 'Python · Excel · Data quality',
+  title: 'Multi-Source Contact Cleanup',
+  description: [
+    'Three messy exports (a CRM, an ad-platform lead list and an email list) merged into one reliable contact table. The pipeline standardises names, emails, phones, countries and dates, then links records of the same person. In this sample, 1,224 raw rows became 623 unique people, with 98% of duplicates merged and no two different people combined.',
+    'Every rule is logged with a count and a before/after example, and anything uncertain goes to a review queue instead of being guessed. The workbook reconciles raw rows to the final list with live formulas. All data is fictional sample data.',
+  ],
+  tags: ['Python', 'pandas', 'Excel', 'Data quality', 'Deduplication'],
+  link: { href: '/dashboards/contact-cleanup.html', label: 'Open the interactive merge explorer', external: false },
+  extraLink: { href: '/downloads/Contact_Cleanup_Project.xlsx', label: 'Download the Excel workbook', download: true },
+}
+
 const projects: Project[] = [
   {
     slides: 'dwh',
@@ -153,7 +168,7 @@ export function Projects() {
         </p>
 
         <div className="grid gap-7">
-          {[featured, adsDashboard].map((w, i) => (
+          {[featured, adsDashboard, cleanup].map((w, i) => (
             <article
               key={w.slides}
               className="grid overflow-hidden rounded-2xl border border-border bg-white shadow-[0_10px_30px_-18px_rgba(58,42,48,.45)] lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)]"
